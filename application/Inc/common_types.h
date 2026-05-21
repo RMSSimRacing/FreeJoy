@@ -301,7 +301,8 @@ typedef struct
 	int8_t 					pin_b;
 	int8_t					dir :4;
 	int8_t					last_dir :4;
-	uint8_t					cycle_started;		// NOVO: rastreia se o ciclo iniciou corretamente
+	uint8_t					cycle_started;		// rastreia se o ciclo iniciou corretamente
+	uint8_t					fsm_state;				// estado da maquina de quadratura
 	
 } encoder_state_t;
 
